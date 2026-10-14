@@ -258,3 +258,50 @@ lid-illustration{
 .reset-btn :hover{
     color:#e05368;
 }
+
+/* 🥢 The Chopsticks Navigation */
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+}
+
+.chopsticks {
+  position: relative;
+  display: inline-flex;
+  gap: 1.5rem;
+  background: #8b5a2b; /* wooden chopstick color */
+  padding: 0.5rem 2rem;
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(139, 90, 43, 0.25);
+}
+
+.chopsticks::before,
+.chopsticks::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 2px;
+}
+
+.chopsticks::before { top: 4px; }
+.chopsticks::after { bottom: 4px; }
+
+.nav-item {
+  color: #fff6ee;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 9999px;
+  transition: all 0.2s ease;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  background: #e05368;
+  color: #ffffff;
+}
