@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #fffaf5; /*cream*/
+    color: #3b2a26; /*dark brown*/
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/*chopstick*/
+header{
+    padding:1.5rem 1rem;
+    display:flex;
+    justify-content:center;
+}
+
+.chopstick{
+    display:flex;
+    gap:1.5rem;
+    background-color:#ffffff; 
+    padding:0.75rem 1.75rem;
+    border-radius:9999px;/* for pill type shaoe*/
+    border: 1.5px solid #f2e2d8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.04);
+}
+
+.nav item{
+    text-decoration:none;
+    color:#8c7a74;
+    font-weight:600;
+    font-size:0.95rem;
+    transition: all 0.2 ease;
+}
+
+.nav item:hover{
+    color:#e05368;
+}
+
+.nav-item.active{
+    color:#e05368;
+    border-bottom:2px solid #e05368;
+    padding-bottom:2px;
+}
+
+/*lid container*/
+.lid-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex:1;
+    padding:1.5rem;
+}
+
+.lid-card{
+    background-color:#ffffff;
+    max-width:480px;
+    width:100%;
+    border: 2px solid #f6ded5;
+    border-radius:28px;
+    padding:2.75rem 2rem;
+    text-align:center;
+    box-shadow: 0 10px 30px rgba(224, 83, 104, 0.08);
+
+}
+
+.badge{
+    display:inline-block;
+    background-color:#fceceb;
+    color:#c94056;
+    font-size: 0.85rem;
+    font-weight:700;
+    padding:0.35rem 0.9rem;
+    border-radius:9999px;
+    margin-bottom:1rem;
+}
+
+.title{
+    font-size:2.2rem;
+    font-weight:800;
+    margin-bottom:0.5rem;
+    letter-spacing:-0.5px;
+    color:#2b1f1c;
+}
+
+.subtitle{
+    font-size:1rem;
+    color:#826e68;
+    margin-bottom:1.5rem;
+    line-height:1.5;
+}
+
+lid-illustration{
+    margin-bottom:1.5rem 0;
+}
+
+.bento-emoji{
+    font-size:4rem;
+    line-height:1;
+    filter:drop-shadow(0 6px 12px rgba(224, 83, 104, 0.2));
+}
+
+.description{
+    font-size:0.95rem;
+    color:#695550;
+    line-height:1.6;
+}
+
+
+
+
+
+/* 🍱 Tasting Menu Grid */
+.menu-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 3rem;
+  width: 100%;
+}
+
+.menu-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.bento-cell {
+  background: #ffffff;
+  border: 2px solid #f6ded5;
+  border-radius: 20px;
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  box-shadow: 0 4px 15px rgba(224, 83, 104, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.bento-cell:hover {
+  transform: translateY(-3px);
+}
+
+
+.cell-icon {
+  font-size: 2.2rem;
+  background: #fff5f2;
+  padding: 0.6rem;
+  border-radius: 14px;
+  line-height: 1;
+}
+
+
+.cell-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #c94056;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.25rem;
+}
+
+.cell-content h3 {
+  font-size: 1.15rem;
+  color: #2b1f1c;
+  margin-bottom: 0.35rem;
+}
+
+.cell-content p {
+  font-size: 0.88rem;
+  color: #695550;
+  line-height: 1.45;
+}
+
+
+
+
+/*Kitchenware Section */
+.kitchen-container {
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.tray{
+    min-height: 140px;
+  background: #ffffff;
+  border: 3px dashed #e3ccc3;
+  border-radius: 20px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.empty-msg{
+    color:#a8948e;
+    font-size:0.95rem;
+    font-style:italic;
+}
+
+.packed-item{
+    background: #fff1ed;
+  border: 1.5px solid #f2cfc4;
+  color: #3b2a26;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  animation: pop 0.15s ease-out;  
+}
+
+@keyframes pop {
+  0% { transform: scale(0.8); }
+  100% { transform: scale(1); }
+}
+
+.pantry {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.ingredient-btn:hover {
+  background: none;
+  border: none;
+  color: #a8948e;
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.ingredient-btn:hover {
+  background: #fceceb;
+  border-color: #e05368;
+  color: #c94056;
+}
+
+.reset-btn :hover{
+    color:#e05368;
+}

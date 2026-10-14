@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Kitchen0 - Bento Studio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--chopstick-->
+    <header>
+        <nav class="chopstick">
+            <a href="index.html" class="nav-item">The Lid</a>
+            <a href="bento.html" class="nav-item"> Tasting Menu</a>
+            <a href="kitchen.html" class="nav-item">bento making</a>
+         </nav>
+    </header>
+
+    <main class="kitchen-container">
+        <div class="kitchen-header">
+            <span class="badge">🍳 Bento builder</span>
+            <h1 class="title">Pack Your Bento</h1>
+            <p class="subtitle">Click ingredients below to fill your lunchbox!</p>
+        </div>
+
+
+        <!-- The Box Display -->
+    <div class="tray" id="tray">
+      <p id="empty-msg" class="empty-msg">Your bento is empty... start packing!</p>
+    </div>
+
+    <div class="pantry">
+      <button class="ingredient-btn" data-item="🍙 Onigiri">🍙 Onigiri</button>
+      <button class="ingredient-btn" data-item="🍳 Tamago">🍳 Tamago</button>
+      <button class="ingredient-btn" data-item="🥦 Broccoli">🥦 Broccoli</button>
+      <button class="ingredient-btn" data-item="🐙 Octopus Sausage">🐙 Octo-Dog</button>
+      <button class="ingredient-btn" data-item="🍡 Dango">🍡 Dango</button>
+    </div>
+
+    <div class="kitchen-controls">
+      <button id="reset-btn" class="reset-btn">Clear Box</button>
+    </div>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
+
+        
